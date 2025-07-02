@@ -702,3 +702,5 @@ def not_found(error):
 def internal_error(error):
     return jsonify({"success": False, "error": "Internal server error"}), 500
 
+if __name__ == '__main__':
+    app.run(debug=True)
